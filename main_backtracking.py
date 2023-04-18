@@ -1,5 +1,10 @@
 import backtracking
 
+# Ein Program um ein Sudoku mit dem Backtracking-Algorithmus zu lösen.
+# Logik in backtracking.py, Unittests in test_backtracking.py (unwichtig
+
+
+# 'Durchschnittliches' Sudoku
 board = [
     [0, 0, 0, 0, 2, 0, 0, 0, 0],
     [0, 3, 0, 0, 0, 9, 0, 7, 1],
@@ -12,6 +17,7 @@ board = [
     [0, 0, 0, 2, 3, 0, 0, 4, 6]
 ]
 
+# Mathematisch 'kleinstes' Sudoku möglich
 board_17 = [
     [0, 0, 0, 7, 0, 0, 0, 3, 0],
     [4, 0, 5, 0, 0, 0, 0, 0, 0],
@@ -24,4 +30,4 @@ board_17 = [
     [0, 2, 0, 0, 0, 0, 0, 0, 0]
 ]
 
-backtracking.solve(board_17)
+backtracking.solve(board)
